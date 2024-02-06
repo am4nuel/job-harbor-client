@@ -18,6 +18,16 @@ module.exports = (sequelize, dataTypes) => {
       allowNull: false,
       unique: true,
     },
+    currentlyWorkingAs: {
+      type: dataTypes.STRING,
+      allowNull: true,
+      defaultValue: "none",
+    },
+    occLevel: {
+      type: dataTypes.STRING,
+      allowNull: true,
+      defaultValue: "none",
+    },
     password: {
       type: dataTypes.STRING,
       allowNull: false,
