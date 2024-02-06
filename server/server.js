@@ -27,7 +27,6 @@ app.use(
     store: sessionStore,
   })
 );
-
 app.use("/register", mainRouter);
 function generateUniqueId() {
   const randomPart = Math.random().toString(36).substring(2, 10);
